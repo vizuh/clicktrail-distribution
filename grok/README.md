@@ -38,6 +38,6 @@ submit that PR.
 - Web Search and X Search discovery, citations, runtime behavior, provider
   delivery, and marketplace publication are separate evidence layers.
 
-See the plugin's [Grok compatibility notes](https://github.com/vizuh/clicktrail-claude-plugin/blob/a643f9ecafefe142e1753888701325e8edb49d84/docs/GROK.md),
+See the plugin's [Grok compatibility notes](https://github.com/vizuh/clicktrail-claude-plugin/blob/f5841a8c325c9a06c1fc3f0359421163294c6f3d/docs/GROK.md),
 the [official marketplace README](https://github.com/xai-org/plugin-marketplace/blob/main/README.md),
 and the [official contribution guide](https://github.com/xai-org/plugin-marketplace/blob/main/CONTRIBUTING.md).

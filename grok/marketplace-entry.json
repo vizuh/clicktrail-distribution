@@ -5,7 +5,7 @@
   "source": {
     "source": "url",
     "url": "https://github.com/vizuh/clicktrail-claude-plugin.git",
-    "sha": "a643f9ecafefe142e1753888701325e8edb49d84"
+    "sha": "f5841a8c325c9a06c1fc3f0359421163294c6f3d"
   },
   "homepage": "https://github.com/vizuh/clicktrail-claude-plugin",
   "keywords": [
