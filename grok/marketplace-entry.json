@@ -1,0 +1,22 @@
+{
+  "name": "clicktrail",
+  "description": "ClickTrail audits lost GCLIDs, UTMs, CRM handoffs, offline conversions, and GA4 versus Google Ads gaps.",
+  "category": "development",
+  "source": {
+    "source": "url",
+    "url": "https://github.com/vizuh/clicktrail-claude-plugin.git",
+    "sha": "f5841a8c325c9a06c1fc3f0359421163294c6f3d"
+  },
+  "homepage": "https://github.com/vizuh/clicktrail-claude-plugin",
+  "keywords": [
+    "clicktrail",
+    "clicktrail attribution",
+    "vizuh clicktrail",
+    "gclid debugging",
+    "crm click id",
+    "offline conversion tracking"
+  ],
+  "domains": [
+    "vizuh.com"
+  ]
+}

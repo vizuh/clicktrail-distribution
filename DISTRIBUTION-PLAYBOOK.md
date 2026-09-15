@@ -26,6 +26,7 @@
 - npm: `@vizuh/clicktrail-*` adapters after authenticated release review.
 - MCP Registry: publish `server.json` only after package metadata and stdio behavior are validated.
 - Copilot/other plugin catalogs: submit generic skills and maintainers' required metadata.
+- Grok Build: reuse Claude-compatible skills, pin remote marketplace sources, and keep local MCP setup explicit until a public package or hosted transport exists.
 - Search/docs: mirror the same problem terms without keyword stuffing.
 
 ## Issue intelligence
