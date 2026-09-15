@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "cases": [
+    {
+      "caseId": "happy_path",
+      "description": "Synthetic consented click through account and dedupe boundaries.",
+      "input": {
+        "url": "https://example.test/pricing?gclid=synthetic-gclid&utm_source=google",
+        "consent": true,
+        "accountId": "acct_synthetic",
+        "eventId": "evt_synthetic"
+      },
+      "expected": [
+        "capture:pass",
+        "persist:pass",
+        "carry:pass",
+        "attach:pass",
+        "dedupe:pass",
+        "report:unknown",
+        "verify:unknown"
+      ]
+    },
+    {
+      "caseId": "redirect_loss",
+      "description": "Landing click is lost by a redirect.",
+      "input": {
+        "url": "https://example.test/pricing?gclid=synthetic-gclid",
+        "consent": true,
+        "redirectPreservesQuery": false
+      },
+      "expected": [
+        "capture:pass",
+        "carry:unknown"
+      ]
+    },
+    {
+      "caseId": "consent_denied",
+      "description": "Capture is blocked when advertising consent is denied.",
+      "input": {
+        "url": "https://example.test/pricing?gclid=synthetic-gclid",
+        "consent": false
+      },
+      "expected": [
+        "capture:unknown",
+        "persist:unknown"
+      ]
+    },
+    {
+      "caseId": "duplicate_retry",
+      "description": "A stable event ID is present for retry deduplication.",
+      "input": {
+        "url": "https://example.test/pricing?gclid=synthetic-gclid",
+        "consent": true,
+        "accountId": "acct_synthetic",
+        "eventId": "evt_retry"
+      },
+      "expected": [
+        "dedupe:pass"
+      ]
+    },
+    {
+      "caseId": "cross_domain_expired",
+      "description": "A stale linker is unverified without runtime token evidence.",
+      "input": {
+        "url": "https://example.test/pricing?gclid=synthetic-gclid",
+        "consent": true
+      },
+      "expected": [
+        "report:unknown",
+        "verify:unknown"
+      ]
+    },
+    {
+      "caseId": "provider_unknown",
+      "description": "Local payload exists but no provider receipt is supplied.",
+      "input": {
+        "url": "https://example.test/pricing?gclid=synthetic-gclid",
+        "consent": true,
+        "eventId": "evt_provider"
+      },
+      "expected": [
+        "report:unknown",
+        "verify:unknown"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+- query: "store gclid with crm contact"
+  intent: implementation
+- query: "crm closed won google ads conversion"
+  intent: implementation
+- query: "hubspot gclid attribution"
+  intent: implementation

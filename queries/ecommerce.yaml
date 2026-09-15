@@ -1,0 +1,6 @@
+- query: "shopify hydrogen preserve gclid checkout"
+  intent: implementation
+- query: "stripe revenue google ads attribution"
+  intent: implementation
+- query: "whatsapp lead original google click"
+  intent: implementation

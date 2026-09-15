@@ -1,0 +1,6 @@
+- query: "deduplicate meta pixel and capi"
+  intent: implementation
+- query: "fbc fbp missing"
+  intent: debugging
+- query: "meta event_id mismatch"
+  intent: debugging

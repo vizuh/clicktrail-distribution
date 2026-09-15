@@ -1,0 +1,6 @@
+- query: "preserve click ids through redirect"
+  intent: debugging
+- query: "gclid missing after redirect"
+  intent: debugging
+- query: "preserve wbraid through signup"
+  intent: implementation

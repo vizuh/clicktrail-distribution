@@ -18,3 +18,10 @@ CAPTURE -> PERSIST -> CARRY -> ATTACH -> REPORT -> DEDUPE -> VERIFY
 - conversion-reconciliation: compare CRM and destination conversion records.
 
 Install: `npx skills add vizuh/clicktrail-skills`
+
+## Machine-completion workflow
+
+The local MCP server exposes `inspect_project`, `detect_attribution_gaps`,
+`plan_installation`, `simulate_ad_click`, `verify_capture`,
+`verify_form_attachment`, `verify_crm_attachment`, `verify_conversion_delivery`,
+and `attribution_health`. Synthetic passes do not prove live provider delivery.

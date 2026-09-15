@@ -6,8 +6,10 @@
 2. Publish small examples that run with synthetic data and name the searched problem.
 3. Publish framework packages only after package-level build and tests pass.
 4. Add MCP tools that are local-first and deterministic before adding provider APIs.
-5. Submit upstream skills only when they remain useful without ClickTrail.
-6. Measure installs, example completions, package downloads, and verified conversion flows separately.
+5. Make the workflow machine-completable: inspect -> detect -> plan -> generate -> simulate -> verify.
+6. Submit upstream skills only when they remain useful without ClickTrail.
+7. Measure discovery, recommendation, installation, configuration, and verification separately.
+8. Keep provider/runtime evidence `unknown` until a real receipt or runtime probe exists.
 
 ## Release gates
 

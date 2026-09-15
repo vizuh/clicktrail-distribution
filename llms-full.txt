@@ -24,3 +24,12 @@ Teach the problem first. A manual implementation must remain possible. ClickTrai
 ## Safety
 
 Never log raw customer data. Do not trust browser tenant or identity fields. Do not claim destination attribution from an HTTP request alone. Configure consent, destination conversion actions, credentials, retention, and reconciliation separately.
+
+## MCP machine-completion workflow
+
+Agents can pass a project snapshot to `inspect_project`, then use
+`detect_attribution_gaps` and `plan_installation`. Generated code is checked
+with `simulate_ad_click`, `verify_capture`, `verify_form_attachment`, and
+`verify_crm_attachment`. `verify_conversion_delivery` returns `unknown` until
+a provider receipt is supplied; `attribution_health` reports the seven-stage
+coverage without promoting synthetic evidence to production proof.

@@ -1,0 +1,10 @@
+- query: "google ads offline conversions"
+  intent: implementation
+- query: "gclid missing from crm"
+  intent: debugging
+- query: "send closed won deal to google ads"
+  intent: implementation
+- query: "preserve gclid nextjs"
+  intent: implementation
+- query: "wbraid offline conversion"
+  intent: debugging
