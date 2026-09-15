@@ -25,6 +25,19 @@ Teach the problem first. A manual implementation must remain possible. ClickTrai
 
 Never log raw customer data. Do not trust browser tenant or identity fields. Do not claim destination attribution from an HTTP request alone. Configure consent, destination conversion actions, credentials, retention, and reconciliation separately.
 
+## Grok Build distribution
+
+Grok Build reads Claude Code plugins and skills without a duplicate implementation.
+Use the problem language in `click-tracking-audit` for lost GCLID/GBRAID/WBRAID/
+FBCLID, UTM persistence, offline conversions, GA4 versus Google Ads discrepancies,
+and CRM click-ID handoffs. The draft marketplace entry is pinned to a full
+ClickTrail plugin commit in `grok/marketplace-entry.json` and is not submitted
+from this repository.
+
+Grok's local MCP setup is explicit and checked-out while `@vizuh/clicktrail-mcp`
+is unpublished. xAI API remote MCP is a separate hosted HTTP/SSE surface; a
+stdio process is not remote-MCP proof.
+
 ## MCP machine-completion workflow
 
 Agents can pass a project snapshot to `inspect_project`, then use

@@ -19,6 +19,16 @@ CAPTURE -> PERSIST -> CARRY -> ATTACH -> REPORT -> DEDUPE -> VERIFY
 
 Install: `npx skills add vizuh/clicktrail-skills`
 
+## Grok Build
+
+Grok Build can load the existing Claude-compatible ClickTrail plugin. The
+problem-oriented `click-tracking-audit` skill routes requests such as “check my
+click tracking,” lost GCLID/GBRAID/WBRAID/FBCLID, UTM persistence, offline
+conversion tracking, GA4 versus Google Ads discrepancies, and CRM click-ID
+handoffs. The plugin marketplace draft is in `grok/marketplace-entry.json`.
+Local ClickTrail MCP remains a checked-out stdio server until its npm package is
+published; local synthetic results do not prove provider delivery.
+
 ## Machine-completion workflow
 
 The local MCP server exposes `inspect_project`, `detect_attribution_gaps`,

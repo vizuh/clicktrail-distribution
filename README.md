@@ -4,7 +4,8 @@ Machine-readable and human review assets for distributing ClickTrail's
 open-source attribution handoff layer: the shared contract that keeps observed
 acquisition context attached to conversion records inside the stack a team owns.
 The assets include problem-oriented skills, query-shaped examples, packages, MCP,
-and agent plugins.
+and agent plugins. The [`grok/`](grok/) directory contains a pinned,
+not-yet-submitted xAI Plugin Marketplace draft that reuses the Claude plugin.
 
 Run `node scripts/verify-all.mjs` from this directory to check cross-references.
 

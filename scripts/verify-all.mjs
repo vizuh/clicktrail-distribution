@@ -12,9 +12,16 @@ const required = [
   path.join(root, 'clicktrail-distribution', 'benchmarks', 'cases.json'),
   path.join(root, 'clicktrail-distribution', 'benchmarks', 'report.schema.json'),
   path.join(root, 'clicktrail-distribution', 'competitors', 'talivia.md'),
+  path.join(root, 'clicktrail-distribution', 'grok', 'marketplace-entry.json'),
+  path.join(root, 'clicktrail-distribution', 'grok', 'README.md'),
 ];
 const missing = required.filter((p) => !fs.existsSync(p));
 if (missing.length) { console.error(missing.join(String.fromCharCode(10))); process.exit(1); }
+const grokEntry = JSON.parse(fs.readFileSync(path.join(root, 'clicktrail-distribution', 'grok', 'marketplace-entry.json'), 'utf8'));
+if (!/^[a-z0-9-]+$/.test(grokEntry.name) || grokEntry.source?.source !== 'url' || !/^https:\/\/github\.com\/vizuh\//.test(grokEntry.source?.url || '') || !/^[0-9a-f]{40}$/.test(grokEntry.source?.sha || '') || !Array.isArray(grokEntry.keywords) || grokEntry.keywords.some((keyword) => !keyword.toLowerCase().includes('clicktrail') && !keyword.toLowerCase().includes('gclid') && !keyword.toLowerCase().includes('crm') && !keyword.toLowerCase().includes('offline'))) {
+  console.error('Grok marketplace draft is missing a pinned Vizuh source or scoped discovery metadata.');
+  process.exit(1);
+}
 const cases = JSON.parse(fs.readFileSync(path.join(root, 'clicktrail-distribution', 'benchmarks', 'cases.json'), 'utf8'));
 const expectedCases = ['happy_path', 'redirect_loss', 'consent_denied', 'duplicate_retry', 'cross_domain_expired', 'provider_unknown'];
 const caseIds = cases.cases?.map((item) => item.caseId) || [];
