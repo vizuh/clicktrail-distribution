@@ -10,6 +10,8 @@ const required = [
   path.join(root, 'clicktrail-mcp', 'server.json'),
   path.join(root, 'clicktrail-distribution', 'llms.txt'),
   path.join(root, 'clicktrail-distribution', 'benchmarks', 'cases.json'),
+  path.join(root, 'clicktrail-distribution', 'benchmarks', 'report.schema.json'),
+  path.join(root, 'clicktrail-distribution', 'competitors', 'talivia.md'),
 ];
 const missing = required.filter((p) => !fs.existsSync(p));
 if (missing.length) { console.error(missing.join(String.fromCharCode(10))); process.exit(1); }

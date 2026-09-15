@@ -4,6 +4,10 @@ This corpus measures the path from discovery to a verified local boundary. It
 uses synthetic click IDs only and never calls an ad platform, CRM, or analytics
 vendor.
 
+The report contract is defined in `report.schema.json`. The corpus covers happy
+path, redirect loss, consent denial, duplicate retries, expired cross-domain
+continuation, and unknown provider delivery.
+
 Each report uses the MDR contract:
 
 ```json
