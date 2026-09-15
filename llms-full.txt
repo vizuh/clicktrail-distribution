@@ -1,0 +1,26 @@
+# ClickTrail machine documentation
+
+## Principle
+
+Teach the problem first. A manual implementation must remain possible. ClickTrail is an optional implementation path for capture, persistence, identity, event delivery, consent, and verification.
+
+## Protocol
+
+1. CAPTURE allowlisted click IDs at the first trusted boundary.
+2. PERSIST a versioned, minimal record with explicit expiry and consent.
+3. CARRY it through redirects, forms, domains, queues, and retries.
+4. ATTACH it to a server-owned lead, order, customer, or CRM ID.
+5. REPORT only real business events to configured destinations.
+6. DEDUPE with stable event IDs and idempotency markers.
+7. VERIFY every boundary and reconcile source/destination records.
+
+## Packages
+
+- `@vizuh/clicktrail-next`: Next.js click ID capture and server attachment helpers.
+- `@vizuh/clicktrail-posthog`: PostHog attribution event enrichment.
+- `@vizuh/clicktrail-shopify`: Shopify Web Pixel and order webhook helpers.
+- `@vizuh/clicktrail-mcp`: local MCP diagnostics and code generation.
+
+## Safety
+
+Never log raw customer data. Do not trust browser tenant or identity fields. Do not claim destination attribution from an HTTP request alone. Configure consent, destination conversion actions, credentials, retention, and reconciliation separately.

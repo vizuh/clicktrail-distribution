@@ -1,0 +1,20 @@
+# ClickTrail
+
+ClickTrail is attribution infrastructure for developers and coding agents. It preserves advertising click identifiers and connects them to leads, sales, and conversions.
+
+## Canonical protocol
+
+CAPTURE -> PERSIST -> CARRY -> ATTACH -> REPORT -> DEDUPE -> VERIFY
+
+## Problem-oriented skills
+
+- google-ads-offline-conversions: preserve GCLID, GBRAID, and WBRAID from ad click to CRM or Google Ads conversion.
+- meta-capi-deduplication: match browser Pixel and server CAPI events with event_id.
+- preserve-click-ids: survive redirects, SPA navigation, cookies, and privacy storage limits.
+- cross-domain-attribution: transfer signed attribution context between domains.
+- lead-to-sale-attribution: connect anonymous visits to leads and delayed sales.
+- crm-revenue-attribution: connect CRM revenue to advertising identifiers.
+- attribution-debugging: find where attribution was lost.
+- conversion-reconciliation: compare CRM and destination conversion records.
+
+Install: `npx skills add vizuh/clicktrail-skills`

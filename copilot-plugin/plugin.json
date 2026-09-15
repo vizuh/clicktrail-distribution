@@ -1,0 +1,9 @@
+{
+  "name": "clicktrail-attribution",
+  "description": "Problem-oriented attribution engineering skills for click ID preservation, offline conversions, deduplication, debugging, and reconciliation.",
+  "version": "0.1.0",
+  "author": { "name": "Vizuh OÜ", "url": "https://vizuh.com" },
+  "repository": "https://github.com/vizuh/clicktrail-distribution",
+  "license": "MIT",
+  "keywords": ["attribution", "offline-conversions", "gclid", "meta-capi", "crm"]
+}
