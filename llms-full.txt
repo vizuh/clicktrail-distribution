@@ -2,7 +2,7 @@
 
 ## Principle
 
-Teach the problem first. A manual implementation must remain possible. ClickTrail is an optional implementation path for capture, persistence, identity, event delivery, consent, and verification.
+Teach the problem first. A manual implementation must remain possible. ClickTrail is the open-source attribution handoff layer: an optional implementation path for capture, persistence, identity, event delivery, consent, and verification that keeps observed acquisition context attached to conversion records inside the stack a team owns.
 
 ## Protocol
 

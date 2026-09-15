@@ -1,6 +1,10 @@
 # ClickTrail distribution assets
 
-Machine-readable and human review assets for distributing ClickTrail attribution knowledge through problem-oriented skills, query-shaped examples, packages, MCP, and agent plugins.
+Machine-readable and human review assets for distributing ClickTrail's
+open-source attribution handoff layer: the shared contract that keeps observed
+acquisition context attached to conversion records inside the stack a team owns.
+The assets include problem-oriented skills, query-shaped examples, packages, MCP,
+and agent plugins.
 
 Run `node scripts/verify-all.mjs` from this directory to check cross-references.
 
